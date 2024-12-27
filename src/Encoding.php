@@ -42,8 +42,8 @@ class Encoding
                 } else {
                     return false;
                 }
-            } catch (Exception $e) {
-                if (file_exits($fileW)) {
+            } catch (\Exception $e) {
+                if (file_exists($fileW)) {
                     unlink($fileW);
                 }
 

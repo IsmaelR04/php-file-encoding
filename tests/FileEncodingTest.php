@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class FileEncodingTest extends TestCase
 {
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
         copy(__DIR__.'/files/test_iso-8859-1.txt', __DIR__.'/files/iso88591.txt');
